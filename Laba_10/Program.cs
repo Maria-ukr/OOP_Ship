@@ -6,17 +6,14 @@ namespace Laba_10
     {
         static void Main()
         {
-            FighterJet jet = new FighterJet(
-                "F-16 Fighting Falcon", 
-                "Jet fuel (JP-8)", 5, 1500);
-            jet.InputData();
-            jet.GetHoursInUp();
-
-            PassengerPlane pasPlane = new PassengerPlane(
-                "Boeing 737-800", 
-                "disel", 3, 189, 5000, 842);
-            pasPlane.OutputData();
-            pasPlane.GetHoursInUp();
+            MavicDrone mavic = new MavicDrone(
+                "Mavic 3 Pro", 95.5, 500, 60, true); 
+            mavic.ExecuteMission("Conducting reconnaissance and artillery adjustment");
+            mavic.StatusCheck();
+            HeavyBomberDrone babaYaga = new HeavyBomberDrone(
+                "Vampire (Baba Yaga)", 100, 300, 40);
+            babaYaga.StatusCheck(); 
+            babaYaga.ExecuteMission("Night sortie and dropping mines on enemy positions");
         }
     }
 }
