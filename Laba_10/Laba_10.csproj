@@ -43,13 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FighterJet.cs" />
-    <Compile Include="HeavyBomberDrone.cs" />
-    <Compile Include="MavicDrone.cs" />
-    <Compile Include="Plane.cs" />
+    <Compile Include="Liner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnmannedAerialNehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
